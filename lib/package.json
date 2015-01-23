@@ -1,0 +1,22 @@
+{
+    "name": "ibtrealtimesjnode"
+  , "version": "2.1.16"
+  , "description": "The Realtime Framework Cloud Messaging Pub/Sub client for Node.js"
+  , "homepage": "http://framework.realtime.co/messaging"
+  , "keywords": ["realtime", "ortc", "server", "library", "messaging", "framework"]
+  , "author": "ORTC <ortc@realtime.co>"
+  , "repository":{
+        "type": "website"
+      , "url": "http://framework.realtime.co/messaging"
+    }
+  , "dependencies": {
+		"ws": "0.4.31"
+		, "request": "2.2.0"
+		, "dateformat": "1.0.2-1.2.3"
+    }
+  , "devDependencies": {
+
+	}
+  , "main": "index"
+  , "engines": { "node": ">= 0.6" }
+}
