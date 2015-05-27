@@ -16,8 +16,7 @@ var countMsgChannel = 0;
 /***********************************************************
 * Client sets
 ***********************************************************/
-
-client.setClusterUrl(connectionUrl);
+isCluster ? client.setClusterUrl(connectionUrl) : client.setUrl(connectionUrl);
 
 client.setConnectionMetadata('UserConnectionMetadata');
 
