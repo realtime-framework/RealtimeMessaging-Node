@@ -1,6 +1,6 @@
 {
     "name": "ibtrealtimesjnode"
-  , "version": "2.1.22"
+  , "version": "2.1.23"
   , "description": "The Realtime Framework Cloud Messaging Pub/Sub client for Node.js"
   , "homepage": "http://framework.realtime.co/messaging"
   , "keywords": ["realtime", "ortc", "server", "library", "messaging", "framework"]
