@@ -1,0 +1,14 @@
+{
+  "name": "realtime-node-sample",
+  "version": "1.0.0",
+  "description": "Simple usage example of the Realtime Node.js SDK",
+  "main": "ortc-api-demo.js",
+  "scripts": {
+    "start": "node ortc-api-demo.js"
+  },
+  "dependencies": {
+	"ibtrealtimesjnode": "latest"
+  },
+  "author": "Realtime",
+  "license": "MIT"
+}

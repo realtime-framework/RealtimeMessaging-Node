@@ -4,10 +4,11 @@ var connectionUrl = 'http://ortc-developers.realtime.co/server/2.1';
 
 var appKey = 'YOUR_APPLICATION_KEY';
 var authToken = 'AUTHENTICATION_TOKEN';
-var channel = 'MyChannel';
+var channel = 'myChannel';
 var privateKey = 'YOUR_APPLICATION_PRIVATE_KEY';
 var isCluster = true;
 var authenticationRequired = false;
+var connectionMetadata = 'Node.js sample';
 
 var client = new OrtcNodeclient();
 
@@ -18,7 +19,7 @@ var countMsgChannel = 0;
 ***********************************************************/
 isCluster ? client.setClusterUrl(connectionUrl) : client.setUrl(connectionUrl);
 
-client.setConnectionMetadata('UserConnectionMetadata');
+client.setConnectionMetadata(connectionMetadata);
 
 /***********************************************************
 * Client callbacks
@@ -60,8 +61,8 @@ function clientConnected(ortc) {
     log('Subscribe to channel: ' + channel);
 
 
-    setTimeout(function(){
-		// Get presence data for MyChannel
+    setInterval(function(){
+		// Get presence data for channel
 		log('Retrieving presence data for channel: ' + channel);
         client.presence({
             authenticationToken : authToken,
@@ -164,7 +165,7 @@ if(authenticationRequired){
 
 
 
-// Send a message to the subscribed channel every 5 seconds
+// Send a message to the subscribed channel every second
 var sendInterval = setInterval(function sendMessage() {
     if (client.getIsConnected() == true) {
         var message = 'Hello world!';
