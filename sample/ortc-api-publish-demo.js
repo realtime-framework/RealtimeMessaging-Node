@@ -1,3 +1,5 @@
+// WARNING: The guaranteed delivery features are not yet available (ETA: January 2017)
+
 var OrtcNodeclient = require('ibtrealtimesjnode').IbtRealTimeSJNode;
 
 var connectionUrl = 'http://ortc-developers.realtime.co/server/2.1';
